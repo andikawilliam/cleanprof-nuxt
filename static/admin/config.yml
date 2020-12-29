@@ -31,10 +31,6 @@ collections:
         fields:
           - { label: 'First Header', name: 'firstHeader', widget: 'string' }
           - { label: 'Second Header', name: 'secondHeader', widget: 'string' }
-          - label: 'Promo Detail'
-            name: 'promoDetail'
-            widget: 'list'
-            fields: 
-              - { label: 'Intro Sentence', name: 'intro', widget: 'string' }
-              - { label: 'Promo', name: 'promo', widget: 'string' }
+          - { label: 'Intro Sentence', name: 'intro', widget: 'string' }
+          - { label: 'Promo', name: 'promo', widget: 'string' }
    
