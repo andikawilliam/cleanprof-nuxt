@@ -19,3 +19,22 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+
+  - name: 'pages'
+    label: 'Pages'
+    format: 'frontmatter'
+    files:
+      - label: 'Home Page'
+        name: 'home'
+        format: 'frontmatter'
+        file: 'content/home.yml'
+        fields:
+          - { label: 'First Header', name: 'firstHeader', widget: 'string' }
+          - { label: 'Second Header', name: 'secondHeader', widget: 'string' }
+          - label: 'Promo Detail'
+            name: 'promoDetail'
+            widget: 'list'
+            fields: 
+              - { label: 'Intro Sentence', name: 'intro', widget: 'string' }
+              - { label: 'Promo', name: 'promo', widget: 'string' }
+   

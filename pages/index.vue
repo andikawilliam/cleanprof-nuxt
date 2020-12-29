@@ -3,11 +3,13 @@
     <div>
       <Logo />
       <h1 class="title">
-        cleanprof-nuxt
+        <!-- {{ home.firstHeader }} -->
       </h1>
       <div class="links">
         <li v-for="product of products" :key="product.slug">
-          <NuxtLink :to="product.slug">{{ product.title }}</NuxtLink>
+          <NuxtLink :to="product.slug">
+            {{ product.title }}
+          </NuxtLink>
         </li>
       </div>
     </div>
@@ -24,6 +26,7 @@ export default {
 
   async asyncData({ $content }) {
     const products = await $content("shop").fetch();
+    const home = await $content("home").fetch();
 
     return {
       products,
