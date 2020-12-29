@@ -26,8 +26,7 @@ collections:
     files:
       - label: 'Home Page'
         name: 'home'
-        format: 'frontmatter'
-        file: 'content/home.md'
+        file: 'content/home.yml'
         fields:
           - { label: 'First Header', name: 'firstHeader', widget: 'string' }
           - { label: 'Second Header', name: 'secondHeader', widget: 'string' }
