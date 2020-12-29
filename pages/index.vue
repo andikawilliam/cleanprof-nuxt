@@ -3,7 +3,7 @@
     <div>
       <Logo />
       <h1 class="title">
-        <!-- {{ home.firstHeader }} -->
+        {{ home.firstHeader }}
       </h1>
       <div class="links">
         <li v-for="product of products" :key="product.slug">
@@ -20,16 +20,18 @@
 export default {
   head() {
     return {
-      script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
+      script: [{
+        src: 'https://identity.netlify.com/v1/netlify-identity-widget.js'
+      }],
     };
   },
 
   async asyncData({ $content }) {
     const products = await $content("shop").fetch();
-    // const home = await $content("home").fetch();
+    const home = await $content('home').fetch();
 
     return {
-      products,
+      products, home
     };
   },
 };
