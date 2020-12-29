@@ -6,8 +6,8 @@
         cleanprof-nuxt
       </h1>
       <div class="links">
-        <li v-for="post of posts" :key="post.slug">
-          <NuxtLink :to="post.slug">{{ post.title }}</NuxtLink>
+        <li v-for="product of products" :key="product.slug">
+          <NuxtLink :to="product.slug">{{ product.title }}</NuxtLink>
         </li>
       </div>
     </div>
@@ -23,10 +23,10 @@ export default {
   },
 
   async asyncData({ $content }) {
-    const posts = await $content("blog").fetch();
+    const products = await $content("shop").fetch();
 
     return {
-      posts,
+      products,
     };
   },
 };
