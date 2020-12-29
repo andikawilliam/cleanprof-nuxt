@@ -26,7 +26,7 @@ export default {
 
   async asyncData({ $content }) {
     const products = await $content("shop").fetch();
-    const home = await $content("home").fetch();
+    // const home = await $content("home").fetch();
 
     return {
       products,
