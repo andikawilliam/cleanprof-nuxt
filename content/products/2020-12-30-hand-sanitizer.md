@@ -1,5 +1,5 @@
 ---
-title: Hand Sanitizer 60mL
+title: Hand Sanitizer (60mL)
 date: 2020-12-30T09:20:59.867Z
 specification: 60mL
 price: "17000"
