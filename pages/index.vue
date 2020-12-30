@@ -29,7 +29,7 @@ export default {
 
   async asyncData({ $content }) {
     const homeHeader = await $content("home").fetch();
-    const products = await $content("products").sortyBy('title', 'desc').fetch();
+    const products = await $content("products").sortBy('title', 'desc').fetch();
 
     return {
       homeHeader, products
