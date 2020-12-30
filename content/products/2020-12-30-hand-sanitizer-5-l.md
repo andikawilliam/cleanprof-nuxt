@@ -1,6 +1,6 @@
 ---
 title: Hand Sanitizer (5 L)
-image: /img/hs-5l-nu-low-pix.png
+image: /img/hs-5l-low-pix.png
 date: 2020-12-30T15:16:20.879Z
 specification: 5 L
 price: "400000"
