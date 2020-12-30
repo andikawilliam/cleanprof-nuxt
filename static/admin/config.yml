@@ -21,8 +21,8 @@ collections:
       - { label: 'Spec', name: 'specification', widget: 'string' }
       - { label: 'Price (Rp.)', name: 'price', widget: 'string', hint: 'Add nominal without the Rp.'}
       - { label: 'Discount (%)', name: 'discount', widget: 'string', hint: 'Add number without the percentage (%)' }
-      - { label: 'Link Tokopedia', name: 'linkTokped ', widget: 'string' }
-      - { label: 'Link Shopee', name: 'linkShopee ', widget: 'string' }
+      - { label: 'Link Tokopedia', name: 'linktokped ', widget: 'string' }
+      - { label: 'Link Shopee', name: 'linkshopee ', widget: 'string' }
       - { label: 'Description', name: 'body', widget: 'text' }
 
   - name: 'pages'

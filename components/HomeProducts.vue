@@ -22,7 +22,7 @@
         <div class="font-omnes h-auto grid grid-cols-2 md:gap-2 px-2 md:px-12 lg:px-32 md:grid-cols-5">
           <a
             target="_blank" rel="noopener noreferrer"
-            v-bind:href="product.linkTokped"
+            v-bind:href="product.linktokped"
             class="card-main p-2"
             v-for="product in products"
             :key="product.slug"
