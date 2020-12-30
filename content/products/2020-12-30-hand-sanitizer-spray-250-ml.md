@@ -5,7 +5,7 @@ discount: 20%
 title: Hand Sanitizer Spray (250 mL)
 image: /img/hs-250-nu-low-pix.png
 date: 2020-12-30T10:48:58.337Z
-price: "22000"
+price: "38000"
 "linktokped ": https://www.tokopedia.com/cleanprofid/handsanitizer-cleanprof-250ml
 "linkShopee ": https://shopee.co.id/Handsanitizer-CleanProf-250mL-i.315548033.5354976761
 "linkshopee ": https://shopee.co.id/Handsanitizer-CleanProf-250mL-i.315548033.5354976761
