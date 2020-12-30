@@ -1,5 +1,6 @@
 ---
 title: Hand Sanitizer (60mL)
+image: /img/hs-60-nu-low-pix.png
 date: 2020-12-30T09:20:59.867Z
 specification: 60mL
 price: "17000"
