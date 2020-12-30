@@ -1,6 +1,6 @@
 ---
 title: Disinfectant (1 L)
-image: /img/dis-250-aerosol-nu-low-pix.png
+image: /img/dis-1l-low-pix.png
 date: 2020-12-30T15:24:26.152Z
 specification: 1 L
 price: "70000"
