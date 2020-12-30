@@ -1,7 +1,7 @@
 ---
-title: Hand Sanitizer
+title: Hand Sanitizer 60mL
 date: 2020-12-30T09:20:59.867Z
-specification: 60 mL
+specification: 60mL
 price: "17000"
 discount: "20"
 link: https://www.tokopedia.com/cleanprofid/handsanitizer-cleanprof-60ml
