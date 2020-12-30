@@ -18,14 +18,14 @@
         Featured Products
       </p>
 
-      <!-- <div id="products">
+      <div id="products">
         <div class="font-omnes h-auto grid grid-cols-2 md:gap-2 px-2 md:px-12 lg:px-32 md:grid-cols-5">
           <a
             target="_blank" rel="noopener noreferrer"
             v-bind:href="product.link"
             class="card-main p-2"
             v-for="product in products"
-            :key="product.id"
+            :key="product.slug"
           >
             <div class="relative max-w-auto mx-auto">
               <div class="relative w-5/6">
@@ -42,18 +42,18 @@
                     </p>
                   </span>
                 </div>
-                <img
+                <!-- <img
                   class="w-full shadow-sm rounded-lg image-transition hover:-translate-y-2"
                   v-bind:src="product.image"
-                  v-bind:alt="product.name"
-                >
+                  v-bind:alt="product.title"
+                /> -->
               </div>
               <div class="px-6 py-2 text-gray-700">
                 <div class="card-title text-sm mb-1" v-cloak>
-                  {{ product.name }}
+                  {{ product.title }}
                 </div>
                 <p class="card-content text-sm" v-cloak>
-                  {{ product.spec }}
+                  {{ product.specification }}
                 </p>
               </div>
               <div class="px-6 pt-1 pb-6" v-if="product.discount">
@@ -72,12 +72,27 @@
             </div>
           </a>
         </div>
-      </div>       -->
+      </div>      
     </section>
 </template>
 
 <script>
 export default {
-  
+  props: {
+    products: Array
+  },
+  methods: {
+    discountPrice: function (product) {
+      let discountPercent = +((product.discount).split('%')[0]);
+      let finalPrice = +(product.price) * (100-discountPercent)/100;
+      return this.priceCommaString(finalPrice);
+    },
+
+    priceCommaString: function (price) {
+      let parts = price.toString().split(".");
+      parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+      return parts.join(".");
+    }
+  }
 }
 </script>

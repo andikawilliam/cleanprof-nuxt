@@ -1,7 +1,7 @@
 <template>
   <div>
-    <HomeHeader :home="homeHeader"/>
-    <HomeProducts />
+    <HomeHeader :home="homeHeader" />
+    <HomeProducts :products="products" />
     <TheFooter />
 
     <div id="overlay" class="fixed h-0 opacity-0 left-0 right-0 bottom-0 z-10 bg-black">

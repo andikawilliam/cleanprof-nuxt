@@ -15,10 +15,11 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: 'Name', name: 'title', widget: 'string' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Image', name: 'image', widget: 'image' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Spec', name: 'specification', widget: 'string' }
-      - { label: 'Price', name: 'price', widget: 'string' }
+      - { label: 'Price (Rp.)', name: 'price', widget: 'string' }
       - { label: 'Discount (%)', name: 'discount', widget: 'string' }
       - { label: 'Link', name: 'link', widget: 'string' }
       - { label: 'Description', name: 'body', widget: 'text' }
