@@ -1,6 +1,6 @@
 ---
 title: Disinfectant (5 L)
-image: /img/dis-5l-nu-low-pix.png
+image: /img/dis-5l-low-pix.png
 date: 2020-12-30T15:26:15.123Z
 specification: 5 L
 price: "350000"
