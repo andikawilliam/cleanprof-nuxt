@@ -4,7 +4,7 @@ image: /img/cleanprof-bundle-launch-10-.png
 date: 2020-12-30T15:33:02.143Z
 specification: Tangerine Bundle
 price: "75000"
-discount: "0"
+discount: ""
 "linktokped ": https://www.tokopedia.com/cleanprofid/tangerine-bundle-1-250-ml-disinfectant-1-1l-disinfectant
 "linkshopee ": https://shopee.co.id/Tangerine-Bundle-1*-250-mL-Disinfectant-1*-1L-Disinfectant-i.315548033.5763841049
 ---
