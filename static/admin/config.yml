@@ -19,9 +19,10 @@ collections:
       - { label: 'Image', name: 'image', widget: 'image' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Spec', name: 'specification', widget: 'string' }
-      - { label: 'Price (Rp.)', name: 'price', widget: 'string', hint: 'without the Rp.'}
-      - { label: 'Discount (%)', name: 'discount', widget: 'string', hint: 'without the percentage (%)' }
-      - { label: 'Link', name: 'link', widget: 'string' }
+      - { label: 'Price (Rp.)', name: 'price', widget: 'string', hint: 'Add nominal without the Rp.'}
+      - { label: 'Discount (%)', name: 'discount', widget: 'string', hint: 'Add number without the percentage (%)' }
+      - { label: 'Link Tokopedia', name: 'linkTokped ', widget: 'string' }
+      - { label: 'Link Shopee', name: 'linkShopee ', widget: 'string' }
       - { label: 'Description', name: 'body', widget: 'text' }
 
   - name: 'pages'
