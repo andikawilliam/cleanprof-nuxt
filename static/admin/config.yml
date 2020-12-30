@@ -15,10 +15,13 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Name', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Spec', name: 'specification', widget: 'string' }
+      - { label: 'Price', name: 'price', widget: 'string' }
+      - { label: 'Discount (%)', name: 'discount', widget: 'string' }
+      - { label: 'Link', name: 'link', widget: 'string' }
+      - { label: 'Description', name: 'body', widget: 'text' }
 
   - name: 'pages'
     label: 'Pages'

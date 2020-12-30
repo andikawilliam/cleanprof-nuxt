@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Dark Overlay Fade */
+#overlay {
+  height: 0; opacity: 0;
+  transition: height 0ms 400ms, opacity 400ms 0ms;
+}
+
+#overlay.visible {
+  height: 100%; opacity: 0.5;
+  transition: height 0ms 0ms, opacity 600ms 0ms;
+}
+
+/* Underline Hover */
+.navlink {    
+  position: relative;
+  padding: 2px 5px;
+}
+
+.navlink:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 3px;
+  left: 50%;
+  position: absolute;
+  background: #FCB01C;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.navlink:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.headline-shadow {
+  text-shadow: -2px 2px 1px #679966;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 600px) {
+  .navlink:hover:after {
+    background-color: #fff;
+  }
+}
+
+
+@font-face {
+  font-family: 'Omnes Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Omnes Regular'), url('../fonts/omnes-regular-webfont.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Univers LT Std 55 Roman';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Univers LT Std 55 Roman'), url('../fonts/UniversLTStd.woff') format('woff');
+  font-display: swap;
+  }
+
+.scroll-smooth {
+    scroll-behavior: smooth;
+}
+
+.image-transition {
+  @apply transition-transform duration-300 transform
+}
+
+.mobile-sidebar {
+  @apply fixed whitespace-no-wrap overflow-hidden h-screen w-0 top-0 right-0 pt-24 bg-orange-bright text-white rounded-l-2rem z-20;
+}
+
+.navlink {
+  @apply block ml-4 mt-2 mr-4;
+}
+
+[v-cloak] {
+  display: none;
+}
+
+@screen lg {
+  .desktop-navbar {
+    @apply flex static overflow-visible h-auto w-auto top-auto right-auto items-center pt-0 bg-transparent text-current rounded-none;
+  }
+}
+
+@tailwind utilities;
