@@ -30,8 +30,8 @@ collections:
           label: 'Discount', name: 'discount', widget: 'string', required: false,
           hint: 'Nominal or Percentage(%). ex: 12000 or 20%; No discount leave as empty.'
         }
-      - { label: 'Link Tokopedia', name: 'linktokped ', widget: 'string' }
-      - { label: 'Link Shopee', name: 'linkshopee ', widget: 'string' }
+      - { label: 'Link Tokopedia', name: 'linktokped', widget: 'string' }
+      - { label: 'Link Shopee', name: 'linkshopee', widget: 'string' }
       - { label: 'Description', name: 'body', widget: 'text' }
 
   - name: 'pages'
