@@ -1,5 +1,6 @@
 ---
 title: Hand Sanitizer (100mL)
+image: /img/hs-100-nu-low-pix.png
 date: 2020-12-30T09:22:34.277Z
 specification: 100mL
 price: "22000"
