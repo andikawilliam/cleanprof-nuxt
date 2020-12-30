@@ -38,7 +38,7 @@
                     </span>
                   </span>
                   <span class="relative inline-flex flex-wrap rounded-lg h-8 w-8 bg-orange-bright text-xs sm:text-discount text-white font-bold justify-center items-center">
-                    <p> {{ product.discount }}%</p>
+                    <p> {{ product.discount }}</p>
                     <p>OFF</p>
                   </span>
                 </div>
