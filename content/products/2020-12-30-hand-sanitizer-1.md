@@ -1,7 +1,7 @@
 ---
-title: Hand Sanitizer
+title: Hand Sanitizer 100mL
 date: 2020-12-30T09:22:34.277Z
-specification: 100 mL
+specification: 100mL
 price: "22000"
 discount: "20"
 link: https://www.tokopedia.com/cleanprofid/handsanitizer-cleanprof-500ml
