@@ -4,7 +4,7 @@ image: /img/dis-250-aerosol-nu-low-pix.png
 date: 2020-12-30T15:22:24.623Z
 specification: 250 mL
 price: "40000"
-discount: "20"
+discount: 20%
 "linktokped ": https://www.tokopedia.com/cleanprofid/disinfectant-aerosol-cleanprof-250ml
 "linkshopee ": https://shopee.co.id/Disinfectant-Aerosol-CleanProf-250mL-i.315548033.5054977732
 ---
