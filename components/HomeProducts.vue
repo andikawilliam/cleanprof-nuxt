@@ -87,8 +87,14 @@ export default {
       return name;
     },
     discountPrice: function (product) {
-      let discountPercent = +((product.discount).split('%')[0]);
-      let finalPrice = +(product.price) * (100-discountPercent)/100;
+      let discount = product.discount;
+
+      if (discount.includes('%')) {
+        let discountPercent = +((product.discount).split('%')[0]);
+        discount = +(product.price) * discountPercent/100;
+      }
+
+      let finalPrice = +(product.price) - discount;
       return this.priceCommaString(finalPrice);
     },
     priceCommaString: function (price) {
