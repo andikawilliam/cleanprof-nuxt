@@ -29,28 +29,28 @@
           >
             <div class="relative max-w-auto mx-auto">
               <div class="relative w-5/6">
-                <div v-if="product.discount" class="flex absolute top-0 right-0 ">
+                <div
+                  class="flex absolute top-0 right-0"
+                  v-if="product.discount"
+                >
                   <span class="absolute inline-flex animate-ping">
-                    <span class="inline-flex rounded-lg h-8 w-8 bg-orange-500 opacity-75"></span>
+                    <span class="inline-flex rounded-lg h-8 w-8 bg-orange-500 opacity-75">
+                    </span>
                   </span>
                   <span class="relative inline-flex flex-wrap rounded-lg h-8 w-8 bg-orange-bright text-xs sm:text-discount text-white font-bold justify-center items-center">
-                    <p v-cloak>
-                      {{ product.discount }}
-                    </p>
-                    <p>
-                      OFF
-                    </p>
+                    <p> {{ product.discount }}%</p>
+                    <p>OFF</p>
                   </span>
                 </div>
-                <!-- <img
+                <img
                   class="w-full shadow-sm rounded-lg image-transition hover:-translate-y-2"
                   v-bind:src="product.image"
                   v-bind:alt="product.title"
-                /> -->
+                />
               </div>
               <div class="px-6 py-2 text-gray-700">
                 <div class="card-title text-sm mb-1" v-cloak>
-                  {{ product.title }}
+                  {{ productName(product.title) }}
                 </div>
                 <p class="card-content text-sm" v-cloak>
                   {{ product.specification }}
@@ -82,12 +82,15 @@ export default {
     products: Array
   },
   methods: {
+    productName: function(title) {
+      let name = title.replace(/ *\([^)]*\) */g, "");
+      return name;
+    },
     discountPrice: function (product) {
       let discountPercent = +((product.discount).split('%')[0]);
       let finalPrice = +(product.price) * (100-discountPercent)/100;
       return this.priceCommaString(finalPrice);
     },
-
     priceCommaString: function (price) {
       let parts = price.toString().split(".");
       parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");

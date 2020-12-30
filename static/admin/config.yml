@@ -15,12 +15,12 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Title (Spec)', name: 'title', widget: 'string', hint: 'ex: Hand Sanitizer (60 mL)' }
       - { label: 'Image', name: 'image', widget: 'image' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Spec', name: 'specification', widget: 'string' }
-      - { label: 'Price (Rp.)', name: 'price', widget: 'string' }
-      - { label: 'Discount (%)', name: 'discount', widget: 'string' }
+      - { label: 'Price (Rp.)', name: 'price', widget: 'string', hint: 'without the Rp.'}
+      - { label: 'Discount (%)', name: 'discount', widget: 'string', hint: 'without the percentage (%)' }
       - { label: 'Link', name: 'link', widget: 'string' }
       - { label: 'Description', name: 'body', widget: 'text' }
 
