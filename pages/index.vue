@@ -29,7 +29,7 @@ export default {
 
   async asyncData({ $content }) {
     const homeHeader = await $content("home").fetch();
-    const products = await $content("shop").fetch();
+    const products = await $content("products").fetch();
 
     return {
       homeHeader, products
