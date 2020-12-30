@@ -1,5 +1,5 @@
 ---
-title: Hand Sanitizer 100mL
+title: Hand Sanitizer (100mL)
 date: 2020-12-30T09:22:34.277Z
 specification: 100mL
 price: "22000"
