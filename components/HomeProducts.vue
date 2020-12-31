@@ -3,7 +3,7 @@
       id="featured-products"
       class="relative bg-white py-24 -mt-10 sm:mt-0 rounded-2rem md:mt-0 md:rounded-none"
     >
-      <HeaderMosaic header="Caring for your Sanitation" />
+      <HeaderMosaic header="Caring For Your Sanitation" />
 
       <p class="font-bold font-univers text-center text-2xl sm:text-left sm:text-4xl sm:ml-24 px-4 sm:mt-32 mb-6 sm:mb-10">
         Featured Products

@@ -16,7 +16,7 @@ collections:
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
-      preview: false
+      preview: true
     fields:
       - { 
           label: 'Title (Specification)', name: 'title', widget: 'string',
@@ -37,6 +37,21 @@ collections:
       - { label: 'Link Shopee', name: 'linkshopee', widget: 'string' }
       - { label: 'Description', name: 'body', widget: 'text' }
 
+  - name: 'retailers'
+    label: 'Retailers'
+    folder: 'content/retailers'
+    format: 'frontmatter'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Retailer Name', name: 'retailer', widget: 'string' }
+      - { label: 'Retailer Logo', name: 'logo', widget: 'string' }
+      - { label: 'Alamat', name: 'alamat', widget: 'string' }
+      - { label: 'Telepon', name: 'telepon', widget: 'string' }
+      - { label: 'Website', name: 'website', widget: 'string', required: false }
+
   - name: 'pages'
     label: 'Pages'
     format: 'frontmatter'
@@ -50,4 +65,24 @@ collections:
           - { label: 'Second Header', name: 'secondHeader', widget: 'string' }
           - { label: 'Intro Sentence', name: 'intro', widget: 'string' }
           - { label: 'Promo', name: 'promo', widget: 'string' }
+
+      - label: 'About Page'
+        name: 'about'
+        format: 'frontmatter'
+        file: 'content/about.md'
+        fields:
+          - { label: 'About Us', name: 'about', widget: 'text' }
+
+      - label: 'Contact Page'
+        name: 'contact'
+        format: 'frontmatter'
+        file: 'content/contact.md'
+        fields:
+          - { label: 'Address', name: 'address', widget: 'string' }
+          - { label: 'Email', name: 'email', widget: 'string' }
+          - { label: 'Telepon', name: 'telepon', widget: 'string' }
+          - { label: 'Instagram', name: 'instagram', widget: 'string', hint: 'Insert without the @' }
+          - { label: 'Facebook', name: 'instagram', widget: 'string' }
+          - { label: 'Tokopedia', name: 'tokopedia', widget: 'string' }
+          - { label: 'Shopee', name: 'shopee', widget: 'string' }
    
