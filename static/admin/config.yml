@@ -73,6 +73,13 @@ collections:
         fields:
           - { label: 'About Us', name: 'about', widget: 'text' }
 
+      - label: 'Catalog Page'
+        name: 'catalog'
+        format: 'frontmatter'
+        file: 'content/catalog.md'
+        fields:
+          - { label: 'Catalog Link', name: 'catalog', widget: 'string' }
+
       - label: 'Contact Page'
         name: 'contact'
         format: 'frontmatter'
