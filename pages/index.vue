@@ -2,7 +2,7 @@
   <div>
     <HomeHeader :home="homeHeader" />
     <HomeProducts :products="products" />
-    <TheFooter />
+    <TheFooter :contact="contact" />
 
     <div id="overlay" class="fixed h-0 opacity-0 left-0 right-0 bottom-0 z-10 bg-black">
     </div>
@@ -30,9 +30,10 @@ export default {
   async asyncData({ $content }) {
     const homeHeader = await $content("home").fetch();
     const products = await $content("products").sortBy('date', 'asc').fetch();
+    const contact = await $content("contact").fetch();
 
     return {
-      homeHeader, products
+      homeHeader, products, contact
     };
   },
 };

@@ -13,31 +13,43 @@
             Menu
           </p>
           <div class="font-omnes font-semibold grid grid-cols-3">
-            <p>
-              <a href="index.html">Shop</a>
+            <p>                
+              <NuxtLink to="/">
+                Shop
+              </NuxtLink>
             </p>
-            <p>
-              <a href="our-story.html">Our Story</a>
+            <p>                
+              <NuxtLink to="/about">
+                Our Story
+              </NuxtLink>
             </p>
-            <p>
-              <a href="ingredients.html">Ingredients</a>
+            <p>                
+              <NuxtLink to="/ingredients">
+                Ingredients
+              </NuxtLink>
             </p>
-            <p>
-              <a href="catalog.html">Catalog</a>
+            <p>                
+              <NuxtLink to="/">
+                Catalog
+              </NuxtLink>
             </p>
-            <p>
-              <a href="retailers.html">Retailers</a>
+            <p>                
+              <NuxtLink to="/retailers">
+                Retailers
+              </NuxtLink>
             </p>
-            <p>
-              <a href="contact-us.html">Contact Us</a>
+            <p>                
+              <NuxtLink to="/contact">
+                Contact Us
+              </NuxtLink>
             </p>
           </div>
         </div>
         <div class="sm:w-1/4 mt-4 h-full">
           <p class="font-univers my-2 text-xl font-bold">Contact</p>
           <p class="font-omnes font-semibold">
-            <a href="mailto:cleanprofid@gmail.com">
-              cleanprofid@gmail.com
+            <a :href="mailTo">
+              {{ contact.email }}
             </a>
           </p>
         </div>
@@ -77,6 +89,14 @@
 
 <script>
 export default {
-  
+  props: {
+    contact: Object
+  },
+
+  computed: {
+    mailTo: function() {
+      return "mailto:" +  this.contact.email;
+    }
+  },
 }
 </script>

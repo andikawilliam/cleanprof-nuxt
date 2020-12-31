@@ -50,7 +50,7 @@
         </div>
       </div>
     </section>
-    <TheFooter />
+    <TheFooter :contact="contact" />
   </div>
 </template>
 
@@ -60,6 +60,13 @@ export default {
     return {
       background: "family-2.jpg"
     }
+  },
+
+  async asyncData({ $content }) {
+    const contact = await $content("contact").fetch();
+    return {
+      contact
+    };
   }
 }
 </script>

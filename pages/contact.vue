@@ -10,28 +10,63 @@
 
         <div class="font-omnes text-left text-lg md:w-3/5 sm:text-xl text-gray-700 mt-6">
           <div class="grid gap-2 grid-cols-5">
-            <p class="font-bold col-span-2 lg:col-span-1">Alamat:</p>
-            <p class="col-span-3 lg:col-span-4">Jalan Putri Tunggal no.18, RT 02, RW 07, Kelurahan Harjamukti, Kecamatan Cimanggis, Kota Depok</p>
+            <p class="font-bold col-span-2 lg:col-span-1">
+              Alamat:
+            </p>
+            <p class="col-span-3 lg:col-span-4">
+              {{ contact.address }}
+            </p>
 
-            <p class="font-bold col-span-2 lg:col-span-1">Email:</p>
-            <p class="col-span-3 lg:col-span-4">cleanprofid@gmail.com</p>
+            <p class="font-bold col-span-2 lg:col-span-1">
+              Email:
+            </p>
+            <p class="col-span-3 lg:col-span-4">
+              {{ contact.email }}
+            </p>
 
-            <p class="font-bold col-span-2 lg:col-span-1">Telepon:</p>
-            <p class="col-span-3 lg:col-span-4">(+62) 812-1014-3314</p>
+            <p class="font-bold col-span-2 lg:col-span-1">
+              Telepon:
+            </p>
+            <p class="col-span-3 lg:col-span-4">
+              {{ contact.telepon }}
+            </p>
             
-            <p class="font-bold col-span-2 lg:col-span-1">Instagram:</p>
-            <p class="col-span-3 lg:col-span-4"><a href="">@cleanprof.id</a></p>
+            <p class="font-bold col-span-2 lg:col-span-1">
+              Instagram:
+            </p>
+            <p class="col-span-3 lg:col-span-4">
+              <a href="https://www.instagram.com/cleanprof.id">@{{ contact.instagram }}</a>
+            </p>
 
-            <p class="font-bold col-span-2 lg:col-span-1">Facebook:</p>
-            <p class="col-span-3 lg:col-span-4"><a href="https://www.facebook.com/CleanProf.ID">Cleanprof.ID</a></p>
+            <p class="font-bold col-span-2 lg:col-span-1">
+              Facebook:
+            </p>
+            <p class="col-span-3 lg:col-span-4">
+              <a href="https://www.facebook.com/CleanProf.ID">
+                {{ contact.facebook }}
+              </a>
+            </p>
 
-            <p class="font-bold col-span-2 lg:col-span-1">Tokopedia:</p>
-            <p class="col-span-3 lg:col-span-4"><a href="http://www.tokopedia.com/cleanprofid">Cleanprof.ID</a></p>
+            <p class="font-bold col-span-2 lg:col-span-1">
+              Tokopedia:</p>
+            <p class="col-span-3 lg:col-span-4">
+              <a href="http://www.tokopedia.com/cleanprofid">
+                {{ contact.tokopedia }}
+              </a>
+            </p>
+
+            <p class="font-bold col-span-2 lg:col-span-1">
+              Shopee:</p>
+            <p class="col-span-3 lg:col-span-4">
+              <a href="http://www.tokopedia.com/cleanprofid">
+                {{ contact.shopee }}
+              </a>
+            </p>
           </div>
         </div>
       </div>
     </section>
-    <TheFooter />
+    <TheFooter :contact="contact" />
   </div>
 </template>
 
@@ -41,7 +76,14 @@ export default {
     return {
       background: "on-orange-2.jpg"
     }
-  }
+  },
+
+  async asyncData({ $content }) {
+    const contact = await $content("contact").fetch();
+    return {
+      contact
+    };
+  },
 }
 </script>
 
