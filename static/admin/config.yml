@@ -82,7 +82,7 @@ collections:
           - { label: 'Email', name: 'email', widget: 'string' }
           - { label: 'Telepon', name: 'telepon', widget: 'string' }
           - { label: 'Instagram', name: 'instagram', widget: 'string', hint: 'Insert without the @' }
-          - { label: 'Facebook', name: 'instagram', widget: 'string' }
+          - { label: 'Facebook', name: 'facebook', widget: 'string' }
           - { label: 'Tokopedia', name: 'tokopedia', widget: 'string' }
           - { label: 'Shopee', name: 'shopee', widget: 'string' }
    
