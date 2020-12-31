@@ -5,6 +5,9 @@ backend:
 media_folder: static/img
 public_folder: /img
 
+logo_url: https://www.cleanprof.id/resources/logo-cleanprof.png
+site_url: https://cleanprof-nuxt.netlify.app/
+
 collections:
   - name: 'products'
     label: 'Products'

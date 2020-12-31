@@ -7,13 +7,13 @@
     <div id="overlay" class="fixed h-0 opacity-0 left-0 right-0 bottom-0 z-10 bg-black">
     </div>
 
-    <div class="links">
+    <!-- <div class="links">
       <li v-for="product of products" :key="product.slug">
         <NuxtLink :to="product.slug">
           {{ product.title }}
         </NuxtLink>
       </li>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -29,7 +29,7 @@ export default {
 
   async asyncData({ $content }) {
     const homeHeader = await $content("home").fetch();
-    const products = await $content("products").sortBy('title', 'desc').fetch();
+    const products = await $content("products").sortBy('date', 'asc').fetch();
 
     return {
       homeHeader, products

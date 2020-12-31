@@ -12,7 +12,7 @@
           <p class="font-univers my-2 text-xl font-bold">
             Menu
           </p>
-          <div class="font-omnes grid grid-cols-3">
+          <div class="font-omnes font-semibold grid grid-cols-3">
             <p>
               <a href="index.html">Shop</a>
             </p>
@@ -35,7 +35,7 @@
         </div>
         <div class="sm:w-1/4 mt-4 h-full">
           <p class="font-univers my-2 text-xl font-bold">Contact</p>
-          <p class="font-omnes">
+          <p class="font-omnes font-semibold">
             <a href="mailto:cleanprofid@gmail.com">
               cleanprofid@gmail.com
             </a>

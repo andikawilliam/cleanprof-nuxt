@@ -7,7 +7,7 @@
           autoplay muted loop playsinline
         >
           <source
-            src="../assets/resources/video/Cleanprof-mute-360.mp4"
+            src="../assets/resources/video/Cleanprof.mp4"
             type="video/mp4"
           >
         </video>

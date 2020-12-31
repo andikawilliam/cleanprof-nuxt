@@ -11,7 +11,9 @@
   "dependencies": {
     "@nuxt/content": "^1.11.1",
     "core-js": "^3.6.5",
-    "nuxt": "^2.14.6"
+    "gsap": "^3.5.1",
+    "nuxt": "^2.14.6",
+    "nuxt-gsap": "^0.1.4"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^3.1.0"

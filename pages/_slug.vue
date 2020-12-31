@@ -10,10 +10,10 @@ export default {
   async asyncData({ $content, params, error }) {
     let product;
     try {
-      product = await $content("shop", params.slug).fetch();
+      product = await $content("products", params.slug).fetch();
       // OR const article = await $content(`articles/${params.slug}`).fetch()
     } catch (e) {
-      error({ message: "Shop Product not found" });
+      error({ message: "Product not found" });
     }
 
     return {
