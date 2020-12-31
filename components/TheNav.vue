@@ -85,7 +85,7 @@ export default {
         { name: "Shop", linkDir: "/" },
         { name: "Our Story", linkDir: "/about" },
         { name: "Ingredients", linkDir: "/ingredients" },
-        { name: "Catalog", linkDir: "/" },
+        { name: "Catalog", linkDir: "/catalog" },
         { name: "Retailers", linkDir: "/retailers" },
         { name: "Contact Us", linkDir: "/contact" },
       ]
