@@ -47,7 +47,7 @@ collections:
       preview: true
     fields:
       - { label: 'Retailer Name', name: 'retailer', widget: 'string' }
-      - { label: 'Retailer Logo', name: 'logo', widget: 'string' }
+      - { label: 'Retailer Logo', name: 'logo', widget: 'image' }
       - { label: 'Alamat', name: 'alamat', widget: 'string' }
       - { label: 'Telepon', name: 'telepon', widget: 'string' }
       - { label: 'Website', name: 'website', widget: 'string', required: false }
