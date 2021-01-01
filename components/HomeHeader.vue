@@ -19,7 +19,7 @@
 
     <div
       id="headline-home"
-      class="relative w-full font-univers px-6 pt-24 pb-7/100 text-left text-white-green lg:tracking-widest lg:py-40 lg:px-20 xl:px-24"
+      class="relative w-full font-univers px-6 pt-24 pb-7/100 text-left text-white-green sm:pt-32 lg:tracking-widest lg:py-40 lg:px-20 xl:px-24"
     >
       <p id="body" class="text-5vh md:text-6vh lg:text-8xl font-bold">
         {{ home.firstHeader }}
@@ -37,20 +37,23 @@
       </p>
       <a
         href="#featured-products"
-        class="inline-block rounded-full py-2 px-4 leading-none bg-orange-bright border-white hover:border-transparent hover:text-orange-bright hover:bg-white mt-4 lg:mt-4"
+        class="inline-block rounded-full py-2 px-4 leading-none bg-orange-bright border-white hover:border-transparent hover:text-orange-bright hover:bg-white my-2 lg:mt-4"
       >
         SHOP NOW!          
       </a>
-      <p class="font-omnes text-2vh md:text-3vh py-2 sm:py-2">
+      <p class="font-omnes text-2vh md:text-3vh py-2 sm:py-4">
         Find us on
         <a
           target="_blank" rel="noopener noreferrer"
           href="https://www.instagram.com/cleanprof.id/" 
-          class="fa fa-instagram mx-2">
+          class="ml-1">
+          <font-awesome-icon :icon="['fab', 'instagram']"  fixed-width />
         </a>
-        <a 
+        <a
+          target="_blank" rel="noopener noreferrer"
           href="https://www.facebook.com/CleanProf.ID"
-          class="fab fa-facebook-square">
+        >
+          <font-awesome-icon :icon="['fab', 'facebook']"  fixed-width />
         </a>
       </p>
     </div>

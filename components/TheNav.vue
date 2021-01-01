@@ -3,7 +3,7 @@
     id="navbar"
     class="fixed w-full z-30 flex items-center justify-between flex-wrap bg-0 px-4 py-4 sm:px-6"
   >
-    <NuxtLink to="/" class="flex items-center flex-shrink-0 lg:px-10">
+    <NuxtLink to="/" class="flex items-center flex-shrink-0 xl:px-10">
       <img
         src="../assets/resources/logo/logo-cleanprof.png"
         class="max-w-full h-16 z-10 sm:h-20"
@@ -32,7 +32,7 @@
       class="transition-width duration-500 mobile-sidebar flex-grow desktop-navbar"
       v-bind:class="{ 'w-3/5': activeBar }"
     >
-      <div class="font-omnes text-lg font-semibold lg:flex-grow">
+      <div class="font-omnes text-lg font-semibold sm:text-2xl lg:text-base lg:flex-grow">
         <a
           id="navclose"
           class="absolute top-0 right-0 p-10 lg:hidden"
@@ -41,7 +41,7 @@
           X
         </a>
         <NuxtLink
-          class="navlink lg:inline-block lg:mt-0"
+          class="navlink lg:inline-block sm:pt-2 lg:pt-0"
           v-for="page in pages"
           v-bind:key="page.name"
           v-bind:to="page.linkDir"
@@ -66,6 +66,9 @@
             />
           </button>
         </a>
+      </div>
+      <div class="absolute bottom-0 right-0 pb-10 pr-6 lg:hidden">
+        <p> © Cleanprof 2020</p>
       </div>
     </div>
   </nav>
@@ -99,7 +102,7 @@ export default {
       }, {
         scrollTrigger: {
           trigger: "#body",
-          start: "top 10%",
+          start: "top 8%",
           end: "top top",
           toggleActions: "play none none reverse"
         },

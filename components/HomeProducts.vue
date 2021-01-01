@@ -5,12 +5,12 @@
     >
       <HeaderMosaic header="Caring For Your Sanitation" />
 
-      <p class="font-bold font-univers text-center text-2xl sm:text-left sm:text-4xl sm:ml-24 px-4 sm:mt-32 mb-6 sm:mb-10">
+      <p class="font-bold font-univers text-center text-2xl sm:text-left sm:text-4xl sm:ml-12 px-4 sm:mt-32 mb-6 sm:mb-10 lg:ml-24">
         Featured Products
       </p>
 
       <div id="products">
-        <div class="font-omnes h-auto grid grid-cols-2 md:gap-2 px-2 md:px-12 lg:px-32 md:grid-cols-5">
+        <div class="font-omnes h-auto grid grid-cols-2 md:gap-2 px-2 md:px-12 lg:px-32 md:grid-cols-4 xl:grid-cols-5">
           <a
             class="card-main p-2"
             target="_blank" rel="noopener noreferrer"

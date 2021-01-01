@@ -1,18 +1,26 @@
 <template>
-  <section id="contact-me" class="text-white-green bg-gradient-to-r from-orange-bright to-orange-bright-2">
-      <div class="sm:flex items-center text-center sm:h-40 sm:items-end py-4 font-mono text-base md:text-lg md:px-10">
-        <div class="px-2 sm:w-1/4 md:px-10">
+  <section 
+    id="contact-me"
+    class="text-white-green bg-gradient-to-r from-orange-bright to-orange-bright-2"
+  >
+      <div
+        class="sm:flex items-center text-center sm:px-4 sm:h-40 sm:items-end py-4 font-mono text-base md:text-lg xl:px-10"
+      >
+        <div class="px-2 lg:px-10 xl:w-1/6">
           <div class="flex justify-center flex-shrink-0 sm:mb-8">
-            <a href="index.html">
-              <img src="../assets/resources/logo/logo-cleanprof-putih.png" class="max-w-full h-16 sm:h-20"></img>
-            </a>
+            <NuxtLink to="/">
+              <img
+                class="max-w-full h-16 sm:h-20"
+                :src="require(`~/assets/resources/logo/logo-cleanprof-putih.png`)"
+              />
+            </NuxtLink>
           </div>
         </div>
-        <div class="sm:w-1/4 mt-4 h-full">
+        <div class="sm:w-1/3 mt-4 h-full">
           <p class="font-univers my-2 text-xl font-bold">
             Menu
           </p>
-          <div class="font-omnes font-semibold grid grid-cols-3">
+          <div class="font-omnes font-semibold grid grid-cols-2 sm:text-base xl:grid-cols-3">
             <p>                
               <NuxtLink to="/">
                 Shop
@@ -45,7 +53,7 @@
             </p>
           </div>
         </div>
-        <div class="sm:w-1/4 mt-4 h-full">
+        <div class="sm:w-1/4 mt-4 h-full xl:w-1/3">
           <p class="font-univers my-2 text-xl font-bold">Contact</p>
           <p class="font-omnes font-semibold">
             <a :href="mailTo">
@@ -53,29 +61,27 @@
             </a>
           </p>
         </div>
-        <div class="sm:w-1/4 mt-4 h-full">
+        <div class="sm:w-1/4 mt-4 h-full sm:px-6 lg:w-1/6">
           <p class="font-univers my-2 text-xl font-bold">
             Socials
           </p>
-          <div class="font-omnes md:text-lg">
-            <!-- <a
-              class="fa fa-instagram bg-green-grass p-1 mr-1 rounded-full"
+          <div class="w-2/5 mx-auto font-omnes sm:text-sm grid grid-cols-1 sm:w-full xl:text-xl">
+            <a
+              class="bg-green-grass p-1 mr-1 rounded-full my-1"
               target="_blank"
               rel="noopener noreferrer"
               href="https://www.instagram.com/cleanprof.id/"
-            />
-            <a
-              class="fab fa-facebook-square bg-green-grass p-1 mr-1 rounded-full"
-              href="https://www.facebook.com/CleanProf.ID"
-            /> -->
-            <!-- <a
-              class="bg-green-grass rounded-full px-2 py-1 mr-1"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="http://www.tokopedia.com/cleanprofid"
             >
-              tokopedia
-            </a> -->
+              <font-awesome-icon :icon="['fab', 'instagram']"  fixed-width />
+              {{ contact.instagram }}
+            </a>
+            <a
+              class="bg-green-grass p-1 mr-1 rounded-full my-1"
+              href="https://www.facebook.com/CleanProf.ID"
+            >
+              <font-awesome-icon :icon="['fab', 'facebook-square']"  fixed-width />
+              {{ contact.facebook }}
+            </a>
           </div>
         </div>   
       </div>

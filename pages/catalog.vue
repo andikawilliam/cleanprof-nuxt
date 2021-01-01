@@ -1,7 +1,9 @@
 <template>
-  <a :href="catalog.catalog" class="text-4xl">
-    Catalog
-  </a>
+  <iframe
+    :src="catalog.catalog"
+    width="640" height="480"
+  >
+  </iframe>
 </template>
 
 <script>
