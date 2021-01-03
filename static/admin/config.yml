@@ -6,7 +6,7 @@ media_folder: static/img
 public_folder: /img
 
 logo_url: https://www.cleanprof.id/resources/logo-cleanprof.png
-site_url: https://cleanprof-nuxt.netlify.app/
+site_url: https://www.cleanprof.id/
 
 collections:
   - name: 'products'
@@ -92,4 +92,3 @@ collections:
           - { label: 'Facebook', name: 'facebook', widget: 'string' }
           - { label: 'Tokopedia', name: 'tokopedia', widget: 'string' }
           - { label: 'Shopee', name: 'shopee', widget: 'string' }
-   

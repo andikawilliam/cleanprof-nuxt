@@ -4,9 +4,6 @@
     <HomeProducts :products="products" />
     <TheFooter :contact="contact" />
 
-    <div id="overlay" class="fixed h-0 opacity-0 left-0 right-0 bottom-0 z-10 bg-black">
-    </div>
-
     <!-- <div class="links">
       <li v-for="product of products" :key="product.slug">
         <NuxtLink :to="product.slug">

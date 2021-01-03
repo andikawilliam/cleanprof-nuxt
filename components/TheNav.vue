@@ -111,7 +111,7 @@ export default {
         color: "#4a5568",
         boxShadow: "0px 0.5px 4px 1px rgba(138,138,138,0.2)",
       }
-    );
-  }
+    )
+  },
 }
 </script>
