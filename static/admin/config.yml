@@ -13,7 +13,7 @@ collections:
     label: 'Products'
     folder: 'content/products'
     format: 'frontmatter'
-    create: true
+    create: false
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: true
