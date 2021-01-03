@@ -5,7 +5,7 @@ backend:
 media_folder: static/img
 public_folder: /img
 
-logo_url: https://www.cleanprof.id/resources/logo-cleanprof.png
+logo_url: https://d33wubrfki0l68.cloudfront.net/6dffd4b982008cce71b2f749584c2c09aaf03613/b79e7/_nuxt/img/logo-cleanprof.7aa60db.png
 site_url: https://www.cleanprof.id/
 
 collections:
