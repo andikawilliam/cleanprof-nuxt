@@ -61,9 +61,33 @@
 </template>
 
 <script>
+const { gsap } = require("gsap/dist/gsap");
+const { ScrollTrigger } = require("gsap/dist/ScrollTrigger");
+
+gsap.registerPlugin(ScrollTrigger);
+
 export default {
   props: {
     home: Object
+  },
+
+  mounted () {
+    gsap.fromTo(
+      "#headline-home", {
+        y: 0,
+        autoAlpha: 1
+      }, {
+        scrollTrigger: {
+          trigger: "#body",
+          start: "top 10%",
+          end: "top top",
+          toggleActions: "play none none reverse"
+        },
+        duration: 0.5,
+        y: 40,
+        autoAlpha: 0
+      }
+    )
   }
 }
 </script>
