@@ -11,23 +11,23 @@
             type="video/mp4"
           >
         </video>
-        <div class="absolute h-full w-full bg-black opacity-25 z-20"></div>
+        <div class="absolute h-full w-full bg-black opacity-30 z-20"></div>
       </div>
     </div>
 
     <TheNav />
 
     <div
-      class="relative w-full font-univers px-6 pt-24 pb-7/100 text-left text-white-green sm:pt-32 lg:tracking-widest lg:py-40 lg:px-20 xl:px-24"
+      class="relative w-4/5 font-univers px-6 pt-24 pb-7/100 text-left text-white-green sm:pt-32 md:w-4/5 lg:tracking-widest lg:py-40 lg:px-20 xl:px-24 xl:w-7/12 xl:leading-normal"
       id="headline-home"
     >
-      <p id="body" class="text-5vh md:text-6vh lg:text-8xl font-bold">
+      <p id="body" class="text-5vh md:text-5vh lg:text-8xl font-bold">
         {{ home.firstHeader }}
       </p>
-      <p class="text-5vh md:text-6vh lg:text-8xl font-bold">
+      <p class="text-2vh md:text-3vh xl:text-4xl font-bold">
         {{ home.secondHeader }}
       </p>
-      <p class="text-2vh md:text-3vh lg:text-2xl pt-1"> 
+      <p class="text-2vh md:text-3vh xl:text-xl pt-1 xl:pt-4"> 
         <span> 
           {{ home.intro }}
         </span>

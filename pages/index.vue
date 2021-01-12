@@ -3,14 +3,6 @@
     <HomeHeader :home="homeHeader" />
     <HomeProducts :products="products" />
     <TheFooter :contact="contact" />
-
-    <!-- <div class="links">
-      <li v-for="product of products" :key="product.slug">
-        <NuxtLink :to="product.slug">
-          {{ product.title }}
-        </NuxtLink>
-      </li>
-    </div> -->
   </div>
 </template>
 

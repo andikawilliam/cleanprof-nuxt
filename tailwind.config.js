@@ -21,6 +21,10 @@ module.exports = {
         'omnes' : ['Omnes Regular'],
         'univers' : ['Univers LT Std 55 Roman'],
       },
+      opacity: {
+        '30' : '0.3',
+        '40' : '0.4'
+      },
       fontSize: {
         '2vh' : '2vh',
         '3vh' : '3vh',
