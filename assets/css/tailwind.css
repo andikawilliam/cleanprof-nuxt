@@ -17,12 +17,12 @@ html {
 }
 
 /* Underline Hover */
-.navlink {    
+.navhover {    
   position: relative;
   padding: 2px 5px;
 }
 
-.navlink:after {    
+.navhover:after {    
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -34,7 +34,7 @@ html {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
-.navlink:hover:after { 
+.navhover:hover:after { 
   width: 100%; 
   left: 0; 
 }

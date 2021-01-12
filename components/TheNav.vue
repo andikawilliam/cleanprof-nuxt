@@ -13,7 +13,7 @@
       <button
         id="navburger"
         class="flex items-center px-3 py-2 border rounded"
-        v-on:click="activeBar = true"
+        v-on:click="openSideBar"
       >
         <svg
           class="fill-current h-3 w-3"
@@ -41,7 +41,7 @@
           X
         </a>
         <NuxtLink
-          class="navlink lg:inline-block sm:pt-2 lg:pt-0"
+          class="navlink navhover lg:inline-block sm:pt-2 lg:pt-0"
           v-for="page in pages"
           v-bind:key="page.name"
           v-bind:to="page.linkDir"
@@ -51,7 +51,7 @@
       </div>
       <div class="lg:flex">
         <a href="http://www.tokopedia.com/cleanprofid">
-          <button class="block text-sm px-2 py-1 leading-none border rounded-full bg-white hover:bg-opacity-75 font-semibold ml-4 mt-4 lg:mt-0">
+          <button class="navlink block text-sm px-2 py-1 leading-none border rounded-full bg-white hover:bg-opacity-75 font-semibold ml-4 mt-4 lg:mt-0">
             <img
               src="../assets/resources/logo/tokopedia-logo.png"
               class="h-6"
@@ -59,7 +59,7 @@
           </button>
         </a>
         <a href="http://shopee.co.id/cleanprof.id">
-          <button class="block text-sm px-2 py-1 leading-none border rounded-full bg-white hover:bg-opacity-75 font-semibold ml-4 mt-4 lg:mt-0">
+          <button class="navlink block text-sm px-2 py-1 leading-none border rounded-full bg-white hover:bg-opacity-75 font-semibold ml-4 mt-4 lg:mt-0">
             <img
               src="../assets/resources/logo/shopee-logo.png"
               class="h-6"
@@ -113,5 +113,16 @@ export default {
       }
     )
   },
+
+  methods: {
+    openSideBar: function() {
+      this.activeBar = true;
+      gsap.fromTo(
+          ".navlink",
+          { x: 50, autoAlpha: 0 },
+          { x: 0, autoAlpha: 1, stagger:.05 }
+      )
+    },
+  }
 }
 </script>
