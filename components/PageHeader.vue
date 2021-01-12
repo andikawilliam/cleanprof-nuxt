@@ -1,8 +1,9 @@
 <template>
-  <section 
-    class="static bg-center bg-cover min-h-4/5screen bg-shadow"
-    v-bind:style="{ backgroundImage: `url('${backgroundDir}')` }"
-  >
+  <section class="static min-h-4/5screen">
+    <img
+      class="image-background absolute object-cover object-center h-4/5 sm:w-full"
+      :src=backgroundDir
+    />
     <TheNav />
   </section>
 </template>
@@ -21,7 +22,8 @@ export default {
 </script>
 
 <style scoped>
-.bg-shadow {
-  box-shadow: inset 0 0 0 2000px rgba(3, 3, 3, 0.1);
+.image-background {
+  filter: brightness(80%)
 }
 </style>
+

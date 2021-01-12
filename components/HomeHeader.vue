@@ -18,8 +18,8 @@
     <TheNav />
 
     <div
-      id="headline-home"
       class="relative w-full font-univers px-6 pt-24 pb-7/100 text-left text-white-green sm:pt-32 lg:tracking-widest lg:py-40 lg:px-20 xl:px-24"
+      id="headline-home"
     >
       <p id="body" class="text-5vh md:text-6vh lg:text-8xl font-bold">
         {{ home.firstHeader }}
@@ -74,7 +74,6 @@ export default {
   mounted () {
     gsap.fromTo(
       "#headline-home", {
-        y: 0,
         autoAlpha: 1
       }, {
         scrollTrigger: {
@@ -84,7 +83,6 @@ export default {
           toggleActions: "play none none reverse"
         },
         duration: 0.5,
-        y: 40,
         autoAlpha: 0
       }
     )

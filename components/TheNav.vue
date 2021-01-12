@@ -29,7 +29,7 @@
     </div>
     <div
       id="navmenu"
-      class="transition-width duration-500 mobile-sidebar flex-grow desktop-navbar sm:pl-4"
+      class="transition-width duration-500 mobile-sidebar flex-grow desktop-navbar"
       v-bind:class="{ 'w-3/5': activeBar }"
     >
       <div class="font-omnes text-lg font-semibold sm:text-2xl lg:text-base lg:flex-grow">
