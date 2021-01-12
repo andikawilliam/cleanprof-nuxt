@@ -9,11 +9,11 @@
         class="max-w-full h-16 z-10 sm:h-20"
       />
     </NuxtLink>
-    <div class="block z-10 lg:hidden">
+    <div class="block z-30 lg:hidden">
       <button
         id="navburger"
         class="flex items-center px-3 py-2 border rounded"
-        v-on:click="openSideBar"
+        v-on:click="toggleSideBar"
       >
         <svg
           class="fill-current h-3 w-3"
@@ -29,17 +29,10 @@
     </div>
     <div
       id="navmenu"
-      class="transition-width duration-500 mobile-sidebar flex-grow desktop-navbar"
+      class="transition-width duration-500 mobile-sidebar flex-grow desktop-navbar sm:pl-4"
       v-bind:class="{ 'w-3/5': activeBar }"
     >
       <div class="font-omnes text-lg font-semibold sm:text-2xl lg:text-base lg:flex-grow">
-        <a
-          id="navclose"
-          class="absolute top-0 right-0 p-10 lg:hidden"
-          v-on:click="activeBar = false"
-        >
-          X
-        </a>
         <NuxtLink
           class="navlink navhover lg:inline-block sm:pt-2 lg:pt-0"
           v-for="page in pages"
@@ -51,7 +44,9 @@
       </div>
       <div class="lg:flex">
         <a href="http://www.tokopedia.com/cleanprofid">
-          <button class="navlink block text-sm px-2 py-1 leading-none border rounded-full bg-white hover:bg-opacity-75 font-semibold ml-4 mt-4 lg:mt-0">
+          <button
+            class="navlink block text-sm px-2 py-1 leading-none border rounded-full bg-white hover:bg-opacity-75 font-semibold ml-4 mt-4 lg:mt-0"
+          >
             <img
               src="../assets/resources/logo/tokopedia-logo.png"
               class="h-6"
@@ -67,7 +62,7 @@
           </button>
         </a>
       </div>
-      <div class="absolute bottom-0 right-0 pb-10 pr-6 lg:hidden">
+      <div class="absolute navlink bottom-0 right-0 pb-10 pr-6 lg:hidden">
         <p> © Cleanprof 2020</p>
       </div>
     </div>
@@ -115,13 +110,15 @@ export default {
   },
 
   methods: {
-    openSideBar: function() {
-      this.activeBar = true;
-      gsap.fromTo(
-          ".navlink",
-          { x: 50, autoAlpha: 0 },
-          { x: 0, autoAlpha: 1, stagger:.05 }
-      )
+    toggleSideBar: function() {
+      this.activeBar = !this.activeBar;
+      if (this.activeBar === true) {
+        gsap.fromTo(
+            ".navlink",
+            { x: 50, autoAlpha: 0 },
+            { x: 0, autoAlpha: 1, stagger:.05 }
+        )
+      }
     },
   }
 }

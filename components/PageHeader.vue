@@ -1,7 +1,7 @@
 <template>
   <section 
-    class="static bg-center bg-cover min-h-4/5screen bg-shadow" 
-    :style="{ backgroundImage: `url('${backgroundDir}')` }"
+    class="static bg-center bg-cover min-h-4/5screen bg-shadow"
+    v-bind:style="{ backgroundImage: `url('${backgroundDir}')` }"
   >
     <TheNav />
   </section>
