@@ -15,7 +15,6 @@ export default {
       }],
     };
   },
-
   async asyncData({ $content }) {
     const homeHeader = await $content("home").fetch();
     const products = await $content("products").sortBy('date', 'asc').fetch();

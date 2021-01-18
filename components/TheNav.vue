@@ -5,7 +5,7 @@
   >
     <NuxtLink to="/" class="flex items-center flex-shrink-0 xl:px-10">
       <img
-        src="../assets/resources/logo/logo-cleanprof.png"
+        src="~/assets/resources/logo/logo-cleanprof.png"
         class="max-w-full h-16 z-10 sm:h-20"
       />
     </NuxtLink>
@@ -16,7 +16,7 @@
         v-on:click="toggleSideBar"
       >
         <svg
-          class="fill-current h-3 w-3"
+          class="fill-current h-4 w-4"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -32,7 +32,7 @@
       class="transition-width duration-500 mobile-sidebar flex-grow desktop-navbar"
       v-bind:class="{ 'w-3/5': activeBar }"
     >
-      <div class="font-omnes text-lg font-semibold sm:text-2xl lg:text-base lg:flex-grow">
+      <div class="font-omnes text-lg font-semibold sm:text-xl md:text-2xl lg:text-base lg:flex-grow">
         <NuxtLink
           class="navlink navhover lg:inline-block sm:pt-2 lg:pt-0"
           v-for="page in pages"
@@ -123,3 +123,11 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.moto-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+</style>

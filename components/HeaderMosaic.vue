@@ -9,7 +9,7 @@
           :src="require(`~/assets/resources/background/background-mosaic.png`)"
         />
         <p
-          class="absolute font-univers text-white text-center text-wrap w-full px-6 headline-shadow text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold"
+          class="absolute font-univers text-white text-center text-wrap w-full px-6 headline-shadow text-8vw leading-9 sm:text-4xl md:text-5xl lg:text-6xl font-bold"
         >
           {{ header }}
         </p>
@@ -47,7 +47,7 @@ export default {
           toggleActions: "play none none reverse"
         },
         duration: 0.5,
-        y: -50,
+        y: 50,
         autoAlpha: 0
       }
     )
@@ -56,4 +56,14 @@ export default {
 </script>
 
 <style scoped>
+.headline-shadow {
+  text-shadow: -1.5px 1.5px 1px #679966;
+}
+
+@media only screen and (min-width: 640px) {
+  .headline-shadow {
+    text-shadow: -2px 2px 1px #679966;
+  }
+}
+
 </style>

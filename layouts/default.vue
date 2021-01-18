@@ -1,5 +1,11 @@
 <template>
   <div>
+    <div class="absolute z-0 container-position">
+      <img
+        src="~/assets/resources/logo/logo-cleanprof.png"
+        class=" max-w-full h-24 md:h-40"
+      />
+    </div>
     <Nuxt />
   </div>
 </template>
@@ -31,4 +37,9 @@ html {
   margin: 0;
 }
 
+.container-position {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
 </style>
