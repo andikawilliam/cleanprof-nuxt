@@ -102,6 +102,8 @@ export default {
           toggleActions: "play none none reverse"
         },
         duration: 0.3,
+        paddingTop: '0.3rem',
+        paddingBottom: '0.3rem',
         background: "#FFFFFF",
         color: "#4a5568",
         boxShadow: "0px 0.5px 4px 1px rgba(138,138,138,0.2)",
