@@ -1,7 +1,7 @@
 <template>
   <section 
     id="contact-me"
-    class="text-white-green bg-gradient-to-r from-orange-bright to-orange-bright-2"
+    class="text-white-green bg-gradient-to-b from-orange-bright-2 to-orange-bright-3"
   >
       <div
         class="sm:flex items-center text-center sm:px-4 sm:h-40 sm:items-end py-4 font-mono text-base md:text-lg xl:px-10"
@@ -21,32 +21,32 @@
             Menu
           </p>
           <div class="font-omnes font-semibold grid grid-cols-2 sm:text-base xl:grid-cols-3">
-            <p>                
+            <p class="hover:opacity-50">                
               <NuxtLink to="/">
                 Shop
               </NuxtLink>
             </p>
-            <p>                
+            <p class="hover:opacity-50">                
               <NuxtLink to="/about">
                 Our Story
               </NuxtLink>
             </p>
-            <p>                
+            <p class="hover:opacity-50">                
               <NuxtLink to="/ingredients">
                 Ingredients
               </NuxtLink>
             </p>
-            <p>                
+            <p class="hover:opacity-50">                
               <NuxtLink to="/">
                 Catalog
               </NuxtLink>
             </p>
-            <p>                
+            <p class="hover:opacity-50">                
               <NuxtLink to="/retailers">
                 Retailers
               </NuxtLink>
             </p>
-            <p>                
+            <p class="hover:opacity-50">                
               <NuxtLink to="/contact">
                 Contact Us
               </NuxtLink>
@@ -55,7 +55,7 @@
         </div>
         <div class="sm:w-1/4 mt-4 h-full xl:w-1/3">
           <p class="font-univers my-2 text-xl font-bold">Contact</p>
-          <p class="font-omnes font-semibold">
+          <p class="font-omnes font-semibold hover:opacity-50">
             <a :href="mailTo">
               {{ contact.email }}
             </a>

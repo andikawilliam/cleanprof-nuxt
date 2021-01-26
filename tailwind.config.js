@@ -66,8 +66,9 @@ module.exports = {
         '4/5screen': '80vh',
       },
       colors: {
-        'orange-bright': '#FCB01C',
+        'orange-bright': '#fcb01c',
         'orange-bright-2': '#fcb935',
+        'orange-bright-3': '#e39e19',
         'green-grass': '#679966',
         'white-green': '#FFFEF1',
       },
