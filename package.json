@@ -18,7 +18,8 @@
     "nuxt": "^2.14.6",
     "nuxt-fontawesome": "^0.4.0",
     "nuxt-gsap": "^0.1.4",
-    "simple-icons": "^4.4.0"
+    "simple-icons": "^4.4.0",
+    "y18n": ">=4.0.1"
   },
   "devDependencies": {
     "@nuxt/image": "^0.0.4",
