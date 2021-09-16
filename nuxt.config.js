@@ -11,7 +11,7 @@ export default {
       { 
         hid: 'description',
         name: 'description', 
-        content: "HAND SANITIZER TERBAIK DISCOUNT 20%! Cleanprof produces the best Hand Sanitizer and Disinfectant in Indonesia. CleanProf membuat Hand Sanitizer dan Disinfektan yang efektif, murah, dan harum untuk dipakai." 
+        content: "HAND SANITIZER TERBAIK DISCOUNT 50%! Cleanprof produces the best Hand Sanitizer and Disinfectant in Indonesia. CleanProf membuat Hand Sanitizer dan Disinfektan yang efektif, murah, dan harum untuk dipakai." 
       }
     ],   
     link: [
