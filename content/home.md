@@ -1,6 +1,6 @@
 ---
-firstHeader: Special Offers Up To 20%
-secondHeader: 
+firstHeader: "Special Offers "
+secondHeader: Up To 50%
 intro: Special Promo
 promo: Free Pouch for every Bundle purchase
 ---
