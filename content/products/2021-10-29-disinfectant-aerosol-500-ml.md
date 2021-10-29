@@ -1,6 +1,6 @@
 ---
 title: Disinfectant Aerosol (500 mL)
-image: /img/disin-500-new-min.jpg
+image: /img/disin-500-new-min-removebg-preview.png
 date: 2021-10-29T13:22:34.951Z
 specification: 500 mL
 price: "48000"
